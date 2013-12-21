@@ -1,0 +1,44 @@
+#full-width-slider {
+  width: 100%;
+  max-height: 500px;
+}
+.infoBlock {
+	position: absolute;
+	top: 78.5%;
+	right: 30px;
+	left: auto;
+	max-width: 80%;
+	padding-bottom: 0;
+	background: #FFF;
+	background: rgba(255, 255, 255, 0.8);
+	overflow: hidden;
+	padding: 20px;
+	text-align: center;
+}
+.infoBlock h4 {
+	font-size: 35px;
+	text-shadow: 2px 2px 2px #312f30;
+	margin: 0;
+	padding-bottom: 0px;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+.infoBlock a {
+  color: #FFF;
+  text-decoration: underline; 
+}
+
+/* iPads (portrait & landscape) ----------- */
+@media only screen and (max-width : 950px) {
+
+}
+
+/* iPad Minis (portrait & landscape) ----------- */
+@media only screen and (max-width : 620px) {
+	
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 480px) {
+	
+}

@@ -1,0 +1,65 @@
+#drawer{
+	border:1px solid #CCC;
+	padding:1em;
+	background-color:#F0F0F0;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F0F0F0', endColorstr='#FEFEFE');
+	background: -webkit-gradient(linear, left top, left bottom, from(#F0F0F0), to(#FEFEFE));
+	background: -moz-linear-gradient(top,  #F0F0F0,  #FEFEFE);
+	border-radius: 0.2em 0.2em 0.2em 0.2em;
+	text-align:center;
+	overflow:visible;
+	left:0;
+	bottom:0;
+	position:fixed;
+	border-top:2px solid #789;
+	width:100%;
+	display:none;
+	z-index:99999999999999;
+	cursor:pointer;
+}
+
+#drawer h1{
+	margin-bottom:0.5em;
+	font-size:larger;
+}
+
+#drawer p{
+	margin-bottom:0.5em;
+	font-size:smaller;
+	float:left;
+}
+
+#drawer a{
+	text-decoration:none;
+	float:left;
+	color:#fff;
+	display:block;
+	padding:5px 10px;
+	background-color:#093;
+	margin-left:20px;
+	font-size:smaller;
+}
+
+/* Smartphones (portrait) ----------- */
+/*@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {*/
+@media only screen and (max-width : 340px) {
+	#drawer{
+		border:1px solid #CCC;
+		padding:0.6em 0.3em;
+		background-color:#F0F0F0;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F0F0F0', endColorstr='#FEFEFE');
+		background: -webkit-gradient(linear, left top, left bottom, from(#F0F0F0), to(#FEFEFE));
+		background: -moz-linear-gradient(top,  #F0F0F0,  #FEFEFE);
+		border-radius: 0.2em 0.2em 0.2em 0.2em;
+		text-align:center;
+		overflow:visible;
+		left:0;
+		bottom:0;
+		position:fixed;
+		border-top:2px solid #789;
+		width:100%;
+		display:none;
+		z-index:99999999999999;
+		cursor:pointer;
+	}
+}
