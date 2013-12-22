@@ -1,162 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>This is your demo website</title>
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta charset="utf-8">
-<meta content="initial-scale=1.0, width=device-width, minimum-scale=1" name="viewport">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/royalslider.css">
-<link rel="stylesheet" type="text/css" href="css/cookie.css">
-<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-<meta name="google-site-verification" content="" />
+	<title>Responsive Navigation Demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="js/menu.js"></script>
 </head>
 <body>
-    <div id="drawer">
-        <p>We use cookies to enhance your experience while using our website. </p>
-        <a href="cookies">Read Cookie Statement</a>
-        <a id="hide-drawer" href="javascript:void(0)">Hide Message</a>
-        <div class="clear"></div>
-    </div>
-	<div id="header">
-    	<a id="logo" href="home/"></a>
-        <div id="header-right">
-            <div id="header-contact">
-                <a id="tel-text" href="contact/">+353 (12) 3456789</a>
-                <a id="tel-icon" href="contact/"></a>
-                <a id="mail-text" href="contact/">info@demowebsite.com</a>
-                <a id="mail-icon" href="contact/"></a>
-                <div class="clear"></div>
-            </div>
-            <div class="clear"></div>
-            <div id="menu">
-                <div id="main-menu">
-                    <ul>
-                        <li><a href="page1">Home</a></li>
-                        <li><a href="page2">Page 1</a></li>
-                        <li><a href="page3">Page 2</a></li>
-                        <li><a href="page4">Page 3</a></li>
-                        <li><a href="page5">Page 4</a></li>
-                        <li><a href="page6">Page 5</a></li>
-                        <li><a href="page7">Page 6</a></li>
-                        <li><a href="page8">Page 7</a></li>
-                    </ul>
-                </div>
-                <div class="clear"></div>
-            </div>
-        </div>
-        <div class="clear"></div>
-    </div>
-    <div id="rotator">
-    	<div id="full-width-slider" class="royalSlider heroSlider rsMinW">
-            <div class="rsContent">
-                <img class="rsImg" src="img/home-1.jpg" alt="We will look after everything to get you online!" />
-                <div class="infoBlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
-                    <h4>We will look after everything to get you online!</h4>
-                    <div class="infoButton"><a href="lets-go">Let's Get Started</a></div>                    
-                </div> 
-            </div>
-            <div class="rsContent">
-                <img class="rsImg" src="img/home-2.jpg" alt="We will look after everything to get you online!" />
-                <div class="infoBlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
-                    <h4>Let us design and you can concentrate on getting the job done!</h4>
-                    <div class="infoButton"><a href="lets-go">I'd like to get online</a></div>                    
-                </div> 
-            </div>
-            <div class="rsContent">
-                <img class="rsImg" src="img/home-3.jpg" alt="We will look after everything to get you online!" />
-                <div class="infoBlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
-                    <h4>When people go looking, we'll make sure they can find you!</h4>
-                    <div class="infoButton"><a href="lets-go">I'd like to get online</a></div>                    
-                </div> 
-            </div>
-     	</div>
-	</div>
-    
-    <div id="content">
-   
-    </div>
-    
-    <div id="footer">
-   		<div id="footer-menu-1">
-        	<ul>
-                <li><a href="page1">Home</a></li>
-                <li><a href="page2">Page 1</a></li>
-                <li><a href="page3">Page 2</a></li>
-                <li><a href="page4">Page 3</a></li>
-                <li><a href="page5">Page 4</a></li>
-                <li><a href="page6">Page 5</a></li>
-                <li><a href="page7">Page 6</a></li>
-                <li><a href="page8">Page 7</a></li>
-            </ul>
-            <div class="clear"></div>
-        </div>
-        <div class="clear"></div>
-        <div id="footer-menu-2">
-        	<ul>
-            	<li><a href="terms">Terms</a></li>
-                <li><a href="privacy">Privacy</a></li>
-                <li><a href="cookies">Cookies</a></li>
-            </ul>
-            <div class="clear"></div>
-        </div> 
-        <div class="clear"></div>
-        <a id="footer-logo" href="home"></a>
-        <a id="footer-tag" href="http://www.demowebsite.com" title="web design agency" target="_blank">
-        	This is a demowebsite.com website
-        </a>	
-    </div>
-    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="js/jquery.royalslider.min.js"></script>
-    <script type="text/javascript">
-		$(document).ready(function(){							
-			var drawer = $("#drawer");
-			drawer.slideDown(function()  {
-				
-			});
-			
-			$("#hide-drawer").click(function() {	
-				$.post("http://www.demowebsite.com/cookie-read.asp", { fun: 'rem-cookie'}, function(data) { 
-					$("#drawer").slideUp('fast');
-				});
-			});
-			
-			$('#full-width-slider').royalSlider({
-				arrowsNav: true,
-				loop: true,
-				keyboardNavEnabled: true,
-				controlsInside: false,
-				imageScaleMode: 'fill',
-				arrowsNavAutoHide: false,
-				autoScaleSlider: true, 
-				autoScaleSliderWidth: 1000,     
-				autoScaleSliderHeight: 427,
-				controlNavigation: 'bullets',
-				thumbsFitInViewport: false,
-				navigateByClick: true,
-				startSlideId: 0,
-				autoPlay: {
-					enabled: true,
-					pauseOnHover: true,
-					delay:5000
-				},
-				transitionType:'move',
-				globalCaption: false,
-				deeplinking: {
-				  enabled: true,
-				  change: false
-				},
-				imgWidth: 1285,
-				imgHeight: 568
-			  });
-			
-			  var divs = $('#rotator');
-			  $(window).on('scroll', function(){
-				   var st = $(this).scrollTop();
-				   divs.css({ 'opacity' : (1 - st/500)});
-			  });
-		});
-	</script>
+	<nav class="clearfix">
+		<ul class="clearfix">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">How-to</a></li>
+			<li><a href="#">Icons</a></li>
+			<li><a href="#">Design</a></li>
+			<li><a href="#">Web 2.0</a></li>
+			<li><a href="#">Tools</a></li>	
+		</ul>
+		<a href="#" id="pull">Menu</a>
+	</nav>
 </body>
 </html>
